@@ -1,0 +1,34 @@
+.head-component-wrapper {
+  background-image: url("../images/car-repair-362150_1920.jpg");
+  background-size: cover;
+  height: 660px;
+}
+
+.nav-bar {
+  font: menu;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  /* background-color: white; */
+}
+
+.nav-list li {
+  padding: 22px;
+  list-style: none;
+  display: inline;
+  font-size: 22px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.company-logo {
+  font-size: 24px;
+  padding: 25px;
+}
