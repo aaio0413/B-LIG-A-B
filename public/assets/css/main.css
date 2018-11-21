@@ -1,7 +1,30 @@
 .head-component-wrapper {
-  background-image: url("../images/car-repair-362150_1920.jpg");
+  background-image: url("../images/traffic_frontpage-B-LIG.jpg");
   background-size: cover;
-  height: 660px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.main-title-wrapper {
+  text-align: center;
+}
+
+.main-title-wrapper h1 {
+  color: white;
+  font-size: 54px;
+}
+
+.second-title-wrapper {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.second-title-wrapper p {
+  color: white;
+  font-size: 20px;
 }
 
 .nav-bar {
@@ -16,11 +39,15 @@
   /* background-color: white; */
 }
 
+.nav-list {
+  padding-right: 26px;
+}
+
 .nav-list li {
   padding: 22px;
   list-style: none;
   display: inline;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .nav-list a {
@@ -29,12 +56,16 @@
 }
 
 .company-logo {
-  font-size: 24px;
+  font-size: 26px;
   padding: 25px;
+  padding-left: 41px;
 }
 
 .service-component-wrapper {
-  margin: 4% 0;
+  font-family: sans-serif;
+  padding: 4% 0;
+  height: 430px;
+  background-color: rgb(246, 253, 255);
 }
 
 .service-component {
@@ -42,7 +73,17 @@
 }
 
 .service-component h1 {
+  width: 88%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 2% auto;
   font-size: 2.3rem;
+}
+
+.service-component span {
+  background: rgb(246, 253, 255);
+  padding: 0 10px;
 }
 
 .service-img-wrapper {
@@ -53,4 +94,14 @@
 
 .service-img {
   margin: auto;
+}
+
+.justify-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-wrapper {
+  margin-top: 22px;
 }
