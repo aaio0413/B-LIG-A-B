@@ -55,6 +55,40 @@
   text-decoration: none;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #031458;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .company-logo {
   width: 30%;
   font-size: 26px;
@@ -115,6 +149,26 @@
   margin-top: 22px;
 }
 
+.two-button-wrapper {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 550px;
+}
+
+.toiawase-button {
+  height: 70px;
+  background-color: rgba(156, 20, 12, 0.71);
+  border: none;
+  padding: 10px;
+  margin: 1%;
+  border-radius: 12px;
+}
+
+.toiawase-button a {
+  color: white;
+}
+
 /*  Business Hour Sector */
 
 .business-hour-component-wrapper {
@@ -126,30 +180,30 @@
 
 .hours {
   font-family: sans-serif;
-  font-size: 32px;
-  width: 33%;
+  font-size: 21px;
+  width: 34%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .business-hour {
-  margin-left: 16%;
+  margin-left: 20%;
   margin-bottom: 4%;
 }
 
 .location {
   font-family: sans-serif;
-  font-size: 26px;
-  width: 26%;
+  font-size: 21px;
+  /* width: 43%; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end;
   padding-left: 6%;
 }
 
 .contact-title {
-  font-size: 32px;
+  /* font-size: 32px; */
   margin-left: 24%;
   margin-bottom: 4%;
 }
@@ -158,8 +212,8 @@
 
 .black-foot {
   background-color: #031458;
-  padding: 75px 100px;
-  height: 186px;
+  padding: 56px;
+  height: 300px;
 }
 
 .footer-wrapper {
@@ -178,9 +232,9 @@
 
 .component-wrapper-right {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   width: 50%;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   font-size: 18px;
   font-family: sans-serif;
 }
@@ -224,4 +278,23 @@ li i {
 
 .logo-image {
   width: 32%;
+}
+
+.location p {
+  margin-bottom: unset;
+}
+
+/*               BANNKIN             */
+
+.bannkin-head-component-wrapper {
+  background-image: url("../images/black-and-white-car-engine-chrome-190574.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.bannkin-service-wrapper {
+  font-family: sans-serif;
+  padding: 4% 0;
+  height: 430px;
+  background-color: rgb(246, 253, 255);
 }
