@@ -181,17 +181,21 @@
 
 .hours {
   font-family: sans-serif;
-  font-size: 21px;
-  width: 34%;
+  font-size: 28px;
+  /* width: 34%; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.business-hour {
+.hours p {
+  margin-bottom: unset;
+}
+
+/* .business-hour {
   margin-left: 20%;
   margin-bottom: 4%;
-}
+} */
 
 .location {
   font-family: sans-serif;
@@ -380,4 +384,98 @@ li i {
     display: block;
     text-align: left;
   }
+}
+
+
+
+/*    ABOUT USSS     */
+
+
+.about-head-component-wrapper {
+  background-color: rgb(4, 125, 255);
+  background-image: url("../images/architecture-building-business-236709.jpg");
+  background-size: cover;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.main-title-wrapper2 {
+  text-align: center;
+}
+
+.main-title-wrapper2 h1 {
+  color: white;
+  font-size: 54px;
+  font-family: serif;
+}
+
+.aboutUs-component-wrapper {
+  background-color: rgb(240, 246, 253);
+  /* padding: 4%; */
+}
+
+.component-row {
+  display: flex;
+  height: 400px;
+}
+
+.about-us-para {
+  background-color: white;
+  width: 50%;
+  padding: 2%;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-us-pix {
+  width: 50%;
+  height: 100%;
+}
+
+.first-picture {
+  background-image: url('../images/Car-Repair-Center.jpg');
+}
+
+.second-para {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+/*  EMAIL FORM */
+.addition-to-head {
+
+  height: 250px;
+
+}
+
+.contact-main-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.email-form {
+  width: 40%;
+  padding: 2%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-wrapp {
+  width: 40%;
+  padding: 2%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-wrapp h1 {
+  margin-bottom: 6%;
 }
