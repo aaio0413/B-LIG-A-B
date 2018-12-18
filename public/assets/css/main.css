@@ -38,6 +38,7 @@
   position: absolute !important;
   /* height: 90px; */
   /* background-color: white; */
+  padding: 0.9rem 2rem !important;
 }
 
 .navbar {
@@ -81,6 +82,10 @@
 
 .burger-button {
   background-color: #f7f7f7 !important;
+}
+
+.dropdown-menu a {
+  color: black !important;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -365,7 +370,7 @@ li i {
   display: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 620px) {
   .nav-bar a {
     display: none;
   }
@@ -386,7 +391,7 @@ li i {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 620px) {
   .nav-bar.responsive {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.66);
@@ -494,4 +499,83 @@ li i {
 
 .contact-info-wrapp h1 {
   margin-bottom: 6%;
+}
+
+@media screen and (max-width: 360px) {
+  .two-button-wrapper {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 595px;
+  }
+
+  .toiawase-button {
+    height: 55px;
+    background-color: rgba(156, 20, 12, 0.71);
+    border: none;
+    padding: 10px;
+    margin: 1%;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .nav-bar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .nav-bar a {
+    /* display: flex !important; */
+  }
+  .nav-bar li {
+    margin: 5px 0;
+  }
+
+  .navbar-menu-items {
+    display: unset;
+    margin-top: unset;
+    /* justify-content: flex-end; */
+  }
+
+  .black-foot {
+    padding: 40px;
+  }
+
+  .logo-image {
+    width: 100%;
+  }
+
+  .location {
+    font-family: sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 6%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .navbar-menu-items {
+    display: flex;
+    margin-top: 2%;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .component-wrapper-left {
+    justify-content: space-around;
+  }
+
+  .location {
+    justify-content: center;
+  }
+
+  .black-foot {
+    padding: 15px;
+  }
 }
