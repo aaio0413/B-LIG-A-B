@@ -89,8 +89,8 @@
 }
 
 .addon-dropdown {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 .display-active {
@@ -609,5 +609,39 @@ li i {
 
   .service-text-wrapper {
     margin: 12% auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUs-component-wrapper {
+    padding: 4%;
+  }
+
+  .component-row {
+    flex-direction: column;
+    display: flex;
+    height: unset;
+  }
+
+  .about-us-para {
+    margin: auto;
+    width: 100%;
+    padding: 3%;
+    font-size: 18px;
+  }
+
+  .second-para {
+    padding-bottom: unset;
+  }
+
+  .about-us-pix {
+    height: 400px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .hours {
+    font-size: 22px;
+    width: unset;
   }
 }

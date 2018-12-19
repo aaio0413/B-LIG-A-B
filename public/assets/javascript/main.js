@@ -15,15 +15,6 @@
 // }
 
 function burgerButton() {
-  //   const burgerBtn = document.getElementsByClassName("burger-button");
-  //   const test = $(".burger-button")
-  //     .find("a")
-  //     .toggle("display");
-
-  //   $(".nav-item")
-  //     .find("a")
-  //     .toggle("display");
-
   $(".navbar-nav")
     .find("a")
     .toggleClass("display-active");
@@ -33,9 +24,8 @@ function burgerButton() {
 }
 
 function dropdown() {
-  $("#navbarDropdownMenuLink")
-    .find("div")
-    .attr("id", drop - down - system)
-    .toggleClass("addon-dropdown");
-  console.log("the button is working?");
+  $("#drop-down-system").toggleClass("addon-dropdown");
+
+  const test = $("#navbarDropdownMenuLink").find("id", "drop-down-system");
+  console.log("the button is working?", test);
 }
