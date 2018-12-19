@@ -89,7 +89,12 @@
 }
 
 .addon-dropdown {
-  position: unset !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-active {
+  display: inline !important;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -523,13 +528,6 @@ li i {
   }
 }
 
-@media screen and (max-width: 380px) {
-  .nav-bar {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.54);
-  }
-}
-
 @media screen and (max-width: 560px) {
   .nav-bar a {
     /* display: flex !important; */
@@ -571,6 +569,11 @@ li i {
 }
 
 @media screen and (max-width: 425px) {
+  .nav-bar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+
   .component-wrapper-left {
     justify-content: space-around;
   }

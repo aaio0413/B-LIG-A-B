@@ -20,9 +20,22 @@ function burgerButton() {
   //     .find("a")
   //     .toggle("display");
 
-  $(".nav-item")
-    .find("a")
-    .toggle("display");
+  //   $(".nav-item")
+  //     .find("a")
+  //     .toggle("display");
 
+  $(".navbar-nav")
+    .find("a")
+    .toggleClass("display-active");
+
+  //   console.log(document.getElementByClassName(".nav-item").style.display);
   //   console.log("this is what I got", test + test2);
+}
+
+function dropdown() {
+  $("#navbarDropdownMenuLink")
+    .find("div")
+    .attr("id", drop - down - system)
+    .toggleClass("addon-dropdown");
+  console.log("the button is working?");
 }
