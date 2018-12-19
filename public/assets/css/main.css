@@ -88,6 +88,10 @@
   color: black !important;
 }
 
+.addon-dropdown {
+  position: unset !important;
+}
+
 /* Dropdown Content (Hidden by Default) */
 /* .dropdown-content {
   display: none;
@@ -577,5 +581,30 @@ li i {
 
   .black-foot {
     padding: 15px;
+  }
+}
+
+@media screen and (max-width: 526px) {
+  .contact-main-wrapper {
+    flex-wrap: wrap;
+    height: unset;
+  }
+
+  .contact-info-wrapp {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .email-form {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .service-component {
+    margin: 10% auto;
+  }
+
+  .service-text-wrapper {
+    margin: 12% auto;
   }
 }

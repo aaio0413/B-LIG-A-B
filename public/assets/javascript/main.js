@@ -16,11 +16,11 @@
 
 function burgerButton() {
   //   const burgerBtn = document.getElementsByClassName("burger-button");
-  const test = $(".burger-button")
-    .find("a")
-    .toggle("display");
+  //   const test = $(".burger-button")
+  //     .find("a")
+  //     .toggle("display");
 
-  const test2 = $(".nav-item")
+  $(".nav-item")
     .find("a")
     .toggle("display");
 
