@@ -176,6 +176,10 @@
   margin: auto;
 }
 
+.service-link {
+  color: black;
+}
+
 .justify-center {
   display: flex;
   flex-direction: column;
