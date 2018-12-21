@@ -29,3 +29,18 @@ function dropdown() {
   const test = $("#navbarDropdownMenuLink").find("id", "drop-down-system");
   console.log("the button is working?", test);
 }
+
+// $(function() {
+//     if (window.matchMedia("(max-width: 768px)").matches) {
+//       $("#mobileFoot").attr("display", "flex");
+//     }
+//   });
+
+// $(function() {
+//   if ($(window).width() > 768) {
+//     console.log("screen width is greater than 768px");
+//   } else {
+//     $("#footerLaptop").attr("css", { display: "none !important" });
+//     $("#mobileFoot").attr("css", { display: "flex" });
+//   }
+// });

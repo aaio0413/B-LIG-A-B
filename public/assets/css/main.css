@@ -243,7 +243,7 @@
   /* width: 43%; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   padding-left: 6%;
 }
 
@@ -383,49 +383,6 @@ li i {
   display: none;
 }
 
-@media screen and (max-width: 620px) {
-  .nav-bar a {
-    display: none;
-  }
-
-  .nav-bar a.icon {
-    display: block;
-    position: fixed;
-    right: 8%;
-    top: 8%;
-  }
-
-  .service-img-wrapper {
-    flex-wrap: wrap;
-  }
-
-  .service-component-wrapper {
-    height: unset;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .nav-bar.responsive {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.66);
-    height: 250px;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .nav-bar.responsive .icon {
-    position: fixed;
-    right: 8%;
-    top: 4%;
-  }
-
-  .nav-bar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
 /*    ABOUT USSS     */
 
 .about-head-component-wrapper {
@@ -514,6 +471,94 @@ li i {
   margin-bottom: 6%;
 }
 
+/*     Mobile Header    */
+.logo-mobile {
+  display: none;
+}
+
+/*     Mobile Footer    */
+
+.mobile-footer {
+  display: none;
+  /* display: flex; */
+  background-color: #031458;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 3%;
+  margin-top: 2%;
+}
+
+.address-wrapper-mobile {
+  width: 87%;
+  text-align: center;
+  margin: 2% auto;
+  color: white;
+  font-size: 20px;
+}
+
+.address-wrapper-mobile p {
+  margin-bottom: unset !important;
+}
+
+.icon-wrapper-mobile ul {
+  padding: 3%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.appear-small-screen {
+  display: none;
+}
+
+@media screen and (max-width: 620px) {
+  .nav-bar a {
+    display: none;
+  }
+
+  .nav-bar a.icon {
+    display: block;
+    position: fixed;
+    right: 8%;
+    top: 8%;
+  }
+
+  .service-img-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .service-component-wrapper {
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .nav-bar.responsive {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.66);
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-bar.responsive .icon {
+    position: fixed;
+    right: 8%;
+    top: 4%;
+  }
+
+  .nav-bar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .two-button-wrapper {
     position: absolute;
@@ -550,10 +595,6 @@ li i {
     padding: 40px;
   }
 
-  .logo-image {
-    width: 100%;
-  }
-
   .location {
     font-family: sans-serif;
     font-size: 15px;
@@ -578,8 +619,49 @@ li i {
     background-color: rgba(0, 0, 0, 0.54);
   }
 
+  .burger-button {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    right: 16px;
+  }
+
+  .logo-mobile {
+    z-index: 1;
+    display: block !important;
+    width: 100%;
+    height: 69px;
+    line-height: 69px;
+    position: absolute;
+    text-align: center;
+    padding-right: 2%;
+  }
+
+  .head-component-wrapper {
+    background-position-x: -206px;
+    height: 560px;
+  }
+
+  .main-title-wrapper {
+    display: none;
+  }
+
   .component-wrapper-left {
     justify-content: space-around;
+  }
+
+  .second-title-wrapper {
+    margin: 1% auto;
+    width: 76%;
+    margin-top: -13%;
+  }
+
+  .second-title-wrapper p {
+    font-size: 20px;
+  }
+
+  .two-button-wrapper {
+    top: 375px;
   }
 
   .location {
@@ -588,6 +670,19 @@ li i {
 
   .black-foot {
     padding: 15px;
+  }
+
+  .footer-logo {
+    padding-left: 1%;
+    width: 100%;
+  }
+
+  .address-wrapper-mobile {
+    font-size: 14px;
+  }
+
+  .appear-small-screen {
+    display: block;
   }
 }
 
@@ -613,6 +708,11 @@ li i {
 
   .service-text-wrapper {
     margin: 12% auto;
+  }
+
+  .text-wrapper {
+    margin-top: unset;
+    margin-bottom: 22px;
   }
 }
 
@@ -647,5 +747,13 @@ li i {
   .hours {
     font-size: 22px;
     width: unset;
+  }
+
+  #footerLaptop {
+    display: none;
+  }
+
+  #mobileFoot {
+    display: flex;
   }
 }
