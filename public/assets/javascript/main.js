@@ -19,6 +19,13 @@ function burgerButton() {
     .find("a")
     .toggleClass("display-active");
 
+  if ($(".navbar").height() > 100) {
+    $(".navbar").css("height", "69px");
+    console.log("this is trying to get back");
+  } else {
+    $(".navbar").height(172);
+  }
+
   //   console.log(document.getElementByClassName(".nav-item").style.display);
   //   console.log("this is what I got", test + test2);
 }

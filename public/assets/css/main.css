@@ -615,14 +615,21 @@ li i {
 
 @media screen and (max-width: 425px) {
   .nav-bar {
+    min-height: 69px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.54);
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 30%;
+    right: 2%;
   }
 
   .burger-button {
     z-index: 2;
     position: absolute;
-    top: 40%;
+    top: 15px;
     right: 16px;
   }
 
