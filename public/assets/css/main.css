@@ -402,8 +402,9 @@ li i {
 
 .main-title-wrapper2 h1 {
   color: white;
-  font-size: 54px;
+  font-size: 41px;
   font-family: serif;
+  margin-top: 44px;
 }
 
 .aboutUs-component-wrapper {
@@ -514,6 +515,12 @@ li i {
 
 .appear-small-screen {
   display: none;
+}
+
+.collapsing {
+  -webkit-transition: none !important;
+  transition: none !important;
+  display: none !important;
 }
 
 @media screen and (max-width: 620px) {
@@ -630,7 +637,7 @@ li i {
     z-index: 2;
     position: absolute;
     top: 15px;
-    right: 16px;
+    right: 8px;
   }
 
   .logo-mobile {
@@ -641,7 +648,8 @@ li i {
     line-height: 69px;
     position: absolute;
     text-align: center;
-    padding-right: 2%;
+    right: 5px;
+    /* padding-right: 1%; */
   }
 
   .head-component-wrapper {
@@ -724,6 +732,12 @@ li i {
 }
 
 @media screen and (max-width: 768px) {
+  #drop-down-system {
+    position: absolute;
+    left: -162px;
+    top: -2px;
+  }
+
   .aboutUs-component-wrapper {
     padding: 4%;
   }
