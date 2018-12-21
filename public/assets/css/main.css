@@ -30,6 +30,7 @@
 }
 
 .nav-bar {
+  width: 100%;
   font: menu;
   color: white !important;
   display: flex;
@@ -39,6 +40,8 @@
   /* height: 90px; */
   /* background-color: white; */
   padding: 0.9rem 2rem !important;
+  padding-bottom: unset !important;
+  height: 69px;
 }
 
 .navbar {
@@ -139,6 +142,10 @@
 
 .main-logo {
   width: 36%;
+}
+
+.forDevelopers {
+  visibility: hidden;
 }
 
 .service-component-wrapper {
